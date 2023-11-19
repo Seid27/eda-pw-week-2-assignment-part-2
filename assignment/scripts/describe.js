@@ -1,6 +1,7 @@
 // WHAT IS THIS EVEN DOING?
 
-// For questions 1-3, each code block is syntactically and logically correct. Your job is to describe what is happening. 
+// For questions 1-3, each code block is syntactically and logically correct.
+// Your job is to describe what is happening.
 // They are in isolation -- variables in one question do not affect other questions.
 // Describe the code as it would be run, and make sure you give us the console.log's value at the end.
 // (Don't just say 'we console log the variable' -- instead say something like 'we console log 'yes'')
@@ -26,10 +27,9 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We declare a variable name and set to a value String 'Dane'.
+// We check if name is equal to 'Mary'. name is equal 'Dane' so
+// We console.log 'How do you do?'
 
 //CODE
 /*
@@ -45,10 +45,13 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// We declare a variable called secret.
+// We declare a variable called code and set the value to 123.
+// We check if code is equal to 123. code is equal to 123 so,
+// secret is assigned to the String 'super' and update the value of code by double, so
+// code will become 246.
+// we check if code is greater than 250. code is 246 and is less than 250 so,
+// we console.log 'super'
 
 //CODE
 /*
@@ -70,10 +73,15 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// we declare a variable isStudent and assign it to boolean true
+// we declare a variable age and assign it ro number value 34
+// we declare a variable zip and assign it to number value 55407
+// we check if isStudent is equal to true and zip is grater than 80000,
+// isStudent is true and zip is 55407 (one condition is false) so,
+// we check if isStudent is equal to false or age is less than 30,
+// isStudent is false and age is 34 and greater that 30 (both conditions are false), so
+// we check if isStudent is true. isStudent is true so,
+// we console.log 'Welcome to prime'
 
 //CODE
 /*
@@ -97,7 +105,7 @@ if (isStudent === true && zip > 80000 ) {
 
 
 // REVERSE
-// Now, for questions 4-6, we'll give you a description and some code. 
+// Now, for questions 4-6, we'll give you a description and some code.
 // Some of the code will NOT match the description.
 // Comment above the problem code, and describe a potential solution.
 // Look closely -- things are logically incorrect or missing and wrong in the code!
@@ -106,16 +114,16 @@ if (isStudent === true && zip > 80000 ) {
 // 0. (DESCRIPTION OF CORRECT BEHAVIOR)
 // We make a variable called number and set it to 1 as a number.
 // Then we increment the number variable. Number is now 2.
-// We check if number is greater than or equal to 2. 
+// We check if number is greater than or equal to 2.
 // -- it is, so we console.log 'yes'
 
 //CODE
 /*
 let number = 1;
 
-// FIX - number-- decrements number, but the instructions ask to increment. 
+// FIX - number-- decrements number, but the instructions ask to increment.
 // Should be number++.
-number--; 
+number--;
 
 if (number >= 2) {
   console.log('yes');
@@ -125,45 +133,52 @@ if (number >= 2) {
 
 
 
-//4. We start with three variables -- colorOne is set to 'blue' and 
-// colorTwo is set to 'red', and mix is set to true. We check if mix is true 
+//4. We start with three variables -- colorOne is set to 'blue' and
+// colorTwo is set to 'red', and mix is set to true. We check if mix is true
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
 /*
+
+// FIX - colorOne is set to 'red', instead it should be set to 'blue'.
 let colorOne = 'red';
+
+// FIX - colorOne is set to 'blue', instead it should be set to 'red'.
 let colorTwo = 'blue';
+
 let mix = true;
 
+// FIX - mix is equal to true, so colorTwo should also be set 'purple'.
 if (mix === true) {
   colorOne = 'purple';
 }
 */
 
 //5. We start with two variables -- temp is set to 40 and time is set to 4.
-// We check if temp is higher than 39 and if time is greater or equal to  4 
+// We check if temp is higher than 39 and if time is greater or equal to  4
 // -- they are so we console.log 'throw away the food!'
 
 /*
 let temp = 40;
 const time = 4;
 
+// FIX - && should be used for the compound conditional instead of ||.
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
 */
 
 //6. We start with two variables -- age is set to 21 and minAge is set to 21.
-// We check if age is greater than or equal to minAge 
+// We check if age is greater than or equal to minAge
 // -- it is, so we console.log 'enter'.
 
 /*
 let age = 21;
 const minAge = 21;
 
+// FIX - should be >=.
 if(minAge <= age) {
   console.log('no entry');
 } else {
   console.log('enter');
 }
 */
-
